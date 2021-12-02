@@ -1,33 +1,153 @@
-body{
-  background-color:pink;
-  font-family: Arial, Helvetica;
-  margin:5%;
-}
-h1{
-  color: blue;
-  font-size: 30px;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: boarder-box;
+  font-family: sans-serif;
   
 }
-h2{
-  color: blue;
+.start{
+  width: 50%;
+  margin: 20px auto;
 }
-h3{
-  color:grey;
+.start .header{
+  width:100%;
+  height: 150px;
+  background-color:#EF60EF;
+  display:flex;
+  align-items: center;
+  position:relative;
 }
-.me{
-  background-color:yellow;
+.header img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  border: 5px solid white;
+  cursor: pointer;
+  transition: .5s;
+  user-select:none;
+  filter: grayscale(100%);
 }
-.career{
-  background-color:yellow;
+.header img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 20px rgba(0,0,0,.5);
 }
-
-.study{
-  background-color:yellow;
+.text{
+  color: white;
+  width:60%;
+  margin-left:auto;
+}
+.text h1{
+  font-size: 80px;
+  font-weight: normal;
+}
+.text p{
+  font-size: 20px;
+  color: lightgray;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.left{
+  width: 30%;
+  background-color:#FCBCFC ;
+  text-align: center;
+}
+.left .contact{
+  margin-top: 120px;
+  
+}
+.contact h4{
+  font-size:35px;
+  font-weight: normal;
+  margin:10px 0;
+}
+.contact h5{
+  font-size:18px;
+  margin: 10px 0;
+}
+.contact p{
+  font-size:17px;
 }
 .skill{
-  background-color:yellow;
+  margin-top:30px;
 }
-.lead{
-  background-color:yellow;
+.skill h1{
+  font-size: 30px;
+  font-weight:normal;
+}
+.bars{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:20px 10px;
+  padding: 0 20px;
+}
+.bars .bar p{
+  font-size:15px;
+  font-weight: bold;
   
+}
+.bar span{
+  display:block;
+  width: 100%;
+  height:10px;
+  background-color:rgb(192,191,191);
+  margin-top:10px;
+  border-radius:10px;
+  position: relative;
+  
+}
+.bar span::before{
+  position:absolute;
+  content:"";
+  width:80%;
+  height:80%;
+  background-color: black;
+  top:50%;
+  left:2px;
+  transform: translateY(-50%);
+  border-radius:10px;
+    
+}
+.education h1{
+  margin-top:20px;
+  font-size:30px;
+  font-weight:normal;
+  
+}
+.education h5{
+  font-size:18px;
+  margin:10px;
+}
+.education p{
+  font-size:15px;
+}
+.right{
+  width:70%;
+ line-height;10%;
+  text-align:justify;
+  position:relative;
+  
+}
+.right h1{
+  background-color:yellow;
+  font-weight:normal;
+  font-size:30px;
+
+}
+.right ul{
+   margin-left: 3%;
+  font-size:16px;
+}
+.right h4{
+  font-size:20px;
+  margin-top:10px 0;
+}
+.right h5{
+  font-size
 }
